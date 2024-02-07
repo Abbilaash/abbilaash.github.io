@@ -1,0 +1,240 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    background: rgb(209, 209, 209);
+  
+    .signature {
+      font-style: italic;
+      font-size: 12px;
+      color: #212121;
+      padding-top: 15px;
+      transition: all 0.3s ease-in-out;
+      
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  
+  .navigationWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    color: white;
+    text-transform: uppercase;
+    overflow: hidden;
+    width: 98%;
+  
+    .logoWrapper {
+      display: flex;
+  
+      .stylish {
+        font-weight: bold;
+      }
+  
+      .logo {
+        padding-left: 4px;
+        color: #ea4f4c;
+      }
+    }
+  
+    .navigation {
+      display: flex;
+      list-style-type: none;
+  
+      li {
+        opacity: 1;
+        list-style-type: none;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+      }
+  
+      .parent {
+        padding: 0 10px;
+        cursor: pointer;
+  
+        .link {
+          position: relative;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;
+          color: white;
+  
+          &:hover {
+            color: #ea4f4c;
+          }
+  
+          .fa-minus {
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            position: absolute;
+            left: -16px;
+            top: 3px;
+          }
+  
+          .fa-plus {
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+          }
+  
+          .fas {
+            color: #ea4f4c;
+            margin: -2px 4px 0;
+            font-size: 10px;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+  
+      .subnavigation {
+        display: none;
+        list-style-type: none;
+        width: 500px;
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        margin: auto;
+        transition: all 0.3s ease-in-out;
+        background-color: #222;
+  
+        li a {
+          font-size: 17px;
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+  
+  .active.parent {
+    transform: translate(-40px, -25px);
+    .link {
+      font-size: 12px;
+  
+      .fa-minus {
+        opacity: 1 !important;
+        font-size: 8px;
+      }
+  
+      .fa-plus {
+        opacity: 0 !important;
+      }
+    }
+  
+    .subnavigation {
+      display: flex;
+    }
+  }
+  
+  .active#clients {
+    .subnavigation {
+      transform: translate(-150px, 17px);
+    }
+  }
+  
+  .active#services {
+    .subnavigation {
+      transform: translate(-290px, 17px);
+    }
+  }
+  
+  .invisible {
+    opacity: 0 !important;
+    transform: translate(50px, 0);
+  }
+
+  .profilePoster{
+    height: 0px;
+  }
+.profile-div{
+    background-color: #d7d7d7;
+    box-shadow: 2px 2px 2px 2px rgb(181, 181, 181);
+    width: 300;
+    height: 530;
+    position: absolute;
+    top: 130;
+    left: 80;
+    border-radius: 15px;
+}
+.profilePic{
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px rgb(181, 181, 181);
+    position: absolute;
+    left: 70;
+    top: 50;
+}
+.profileName{
+    position: absolute;
+    left: 85;
+    top: 220;
+    font-weight: 700;
+    font-size: 18;
+    color: rgb(71, 71, 71);
+}
+.profileName:hover{
+    text-decoration: underline;
+}
+.My-works-text{
+    font-size: 21;
+    position: absolute;
+    top: 300;
+    left: 450;
+    font-weight: 550;
+}
+.main-gal{
+    position: absolute;
+    left: 450;
+    top: 380;
+}
+.gallery{
+    border: 1px solid #ccc;
+    float: left;
+    cursor:pointer;
+}
+.post-img{
+    border-radius: 10px;
+    margin: 5px;
+}
+.post-img:hover{
+    transform: scale(1.1);
+}
+.profileStats{
+  position: absolute;
+  left: 60;
+  top: 320;
+  width: 170;
+}
+.profileJob{
+  position: absolute;
+  top: 250;
+  left: 60;
+  font-family: "Roboto", sans-serif;
+  color: rgb(71, 71, 71);
+  font-size: 15;
+}
+.statNames{
+  font-size: 15;
+  font-family: "Roboto", sans-serif;
+  color: rgb(75, 75, 75);
+  text-align: center;
+}
+.seperator1{
+  position: absolute;
+  top: 300;
+  left: 7;
+  height: 2px;
+  border: 0;
+  width: 95%;
+}
+  
